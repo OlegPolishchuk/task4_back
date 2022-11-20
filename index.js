@@ -16,9 +16,7 @@ const DB_PASSWORD = process.env.DB_PASS;
 const DB_NAME = process.env.DB_NAME;
 
 
-app.use(cors({
-  origin: "http://localhost:3000",
-}));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
